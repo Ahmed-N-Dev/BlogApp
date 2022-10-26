@@ -1,0 +1,33 @@
+<%- include("partials/header"); -%>
+
+
+
+
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post">
+
+    <div class="mb-3">
+            <label class="form-label form-label-Mergin" for="titleID">Title</label>
+            <input class="form-control form-input-Mergin" type="text" name="postTitle" id="titleID"> 
+    </div>
+    
+    <div >
+            <label class="form-label form-label-Mergin" for="postTextID">Post</label>
+            <textarea class="form-control form-input-Mergin" name="postBody" id="postTextID" cols="100" rows="10"></textarea>
+    
+
+    </div>
+    
+
+    <button class="btn btn-primary form-btn" type="submit" name="btnPublish">Publish</button>
+
+</form>
+
+
+
+
+
+
+<%- include('partials/footer'); -%>
